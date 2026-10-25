@@ -1,0 +1,66 @@
+name: Update SEC data
+
+on:
+  schedule:
+    # 1st and 5th of every month, 00:00 UTC (09:00 KST)
+    - cron: "0 0 1,5 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["docs/**", "scripts/**", ".github/workflows/update-data.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch SEC EDGAR data
+        if: github.event_name != 'push'
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || 'SEC_Alphabet Dashboard starbucks@snu.ac.kr' }}
+        run: python scripts/fetch_sec.py
+
+      - name: Build datasets
+        run: python scripts/build_data.py
+
+      - name: Commit updated data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw/alphabet_*.json data/processed docs/data README.md
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "data: monthly SEC update $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
