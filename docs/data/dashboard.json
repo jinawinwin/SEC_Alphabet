@@ -3,9 +3,9 @@
   "company": "Alphabet Inc.",
   "ticker": "GOOGL / GOOG",
   "cik": "0001652044",
-  "updated": "2026-10-25",
-  "latest_quarter": "2026 Q2",
-  "latest_quarter_end": "2026-06-30",
+  "updated": "2026-11-01",
+  "latest_quarter": "2026 Q3",
+  "latest_quarter_end": "2026-09-30",
   "latest_fy": "FY2025",
   "source": "SEC EDGAR XBRL companyfacts API"
  },
@@ -3371,7 +3371,7 @@
    "eps_diluted": 2.87,
    "operating_cf": 48414000000,
    "capex": 23953000000,
-   "buybacks": 11904000000,
+   "buybacks": 11504000000,
    "dividends": 2536000000,
    "sbc": 6368000000,
    "cash_st_inv": 98496000000,
@@ -3412,7 +3412,7 @@
    "eps_diluted": 2.82,
    "operating_cf": 52402000000,
    "capex": 27851000000,
-   "buybacks": 5499000000,
+   "buybacks": 5899000000,
    "dividends": 2536000000,
    "sbc": 7071000000,
    "cash_st_inv": 126843000000,
@@ -3517,6 +3517,47 @@
    "revenue_yoy": 0.242336,
    "net_income_yoy": 2.97904,
    "roe": 0.801933
+  },
+  {
+   "period": "2026 Q3",
+   "fiscal_year": 2026,
+   "period_end": "2026-09-30",
+   "revenue": 127577000000,
+   "cost_of_revenue": 51419000000,
+   "rnd": 20640000000,
+   "sales_marketing": 8804000000,
+   "g_and_a": 6138000000,
+   "operating_income": 40576000000,
+   "other_income": -8221000000,
+   "pretax_income": 32355000000,
+   "income_tax": 5887000000,
+   "net_income": 26468000000,
+   "eps_diluted": 2.12,
+   "operating_cf": 42290000000,
+   "capex": 51355000000,
+   "buybacks": 0,
+   "dividends": null,
+   "sbc": 8630000000,
+   "cash_st_inv": 265098000000,
+   "current_assets": 374665000000,
+   "total_assets": 1003312000000,
+   "current_liabilities": 134501000000,
+   "total_liabilities": 325763000000,
+   "long_term_debt": 125102000000,
+   "equity": 677549000000,
+   "gross_profit": 76158000000,
+   "free_cash_flow": -9065000000,
+   "gross_margin": 0.596957,
+   "operating_margin": 0.318051,
+   "net_margin": 0.207467,
+   "rnd_ratio": 0.161785,
+   "fcf_margin": -0.071055,
+   "effective_tax_rate": 0.18195,
+   "current_ratio": 2.785593,
+   "debt_to_equity": 0.184639,
+   "revenue_yoy": 0.246526,
+   "net_income_yoy": -0.243317,
+   "roe": 0.160652
   }
  ],
  "peers": [
@@ -3711,6 +3752,12 @@
  "filings": [
   {
    "form": "10-Q",
+   "filed": "2026-10-29",
+   "period": "2026-09-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+  },
+  {
+   "form": "10-Q",
    "filed": "2026-07-23",
    "period": "2026-06-30",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
@@ -3750,12 +3797,6 @@
    "filed": "2025-02-05",
    "period": "2024-12-31",
    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm"
-  },
-  {
-   "form": "10-Q",
-   "filed": "2024-10-30",
-   "period": "2024-09-30",
-   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/goog-20240930.htm"
   }
  ]
 }
