@@ -72,13 +72,13 @@ SEC는 연락처가 담긴 User-Agent를 요구합니다. 필요하면 `SEC_USER
 ## 글로벌 피어 (Global Peer Firms)
 
 <!-- PEERS:START -->
-_SEC XBRL 최신 연간 보고서(10-K / 20-F) 기준 · 단위: 십억 달러(USD bn) · 갱신: 2026-11-01_
+_SEC XBRL 최신 연간 보고서(10-K / 20-F) 기준 · 단위: 십억 달러(USD bn) · 갱신: 2026-11-05_
 
 | 기업 | 티커 | 국가 | 상장 | Alphabet과의 경쟁 영역 | 회계연도 말 | 매출 | 영업이익률 | 순이익 | R&D/매출 |
 |---|---|---|---|---|---|--:|--:|--:|--:|
 | Alphabet (기준) | GOOGL | 미국 | NASDAQ | 검색·YouTube 광고, Google Cloud, Android, Waymo | 2025-12-31 | 402.8 | 32.0% | 132.2 | 15.2% |
 | Microsoft | MSFT | 미국 | NASDAQ | 클라우드(Azure), 검색(Bing), 생성형 AI, 생산성 SW | 2026-06-30 | 331.8 | 46.8% | 133.7 | 10.7% |
-| Apple | AAPL | 미국 | NASDAQ | 모바일 OS(iOS vs Android), 앱스토어, 하드웨어 | 2025-09-27 | 416.2 | 32.0% | 112.0 | 8.3% |
+| Apple | AAPL | 미국 | NASDAQ | 모바일 OS(iOS vs Android), 앱스토어, 하드웨어 | 2026-09-26 | 478.8 | 33.0% | 132.2 | 9.6% |
 | Amazon | AMZN | 미국 | NASDAQ | 클라우드(AWS), 디지털 광고, 스마트 기기 | 2025-12-31 | 716.9 | 11.2% | 77.7 | — |
 | Meta Platforms | META | 미국 | NASDAQ | 디지털 광고, 소셜/동영상(YouTube 경쟁), AI 모델 | 2025-12-31 | 201.0 | 41.4% | 60.5 | 28.5% |
 | Oracle | ORCL | 미국 | NYSE | 클라우드 인프라(OCI), 데이터베이스 | 2026-05-31 | 67.4 | 30.6% | 17.1 | 15.3% |
